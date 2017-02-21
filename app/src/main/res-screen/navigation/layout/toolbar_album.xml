@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/spacing_normal"
+                android:paddingTop="@dimen/spacing_tiny"
+                tools:background="@color/darkGray"
+    >
+
+    <TextView
+        android:id="@+id/txtTBTopTitle"
+        style="@style/headerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:transitionName="@string/artistName_T"
+        tools:targetApi="lollipop"
+        tools:text="Prince"/>
+
+    <TextView
+        android:id="@+id/txtTBBottomTitle"
+        style="@style/labelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTBTopTitle"
+        android:paddingBottom="@dimen/spacing_tiny"
+        android:text="@string/albumsTitle"
+        android:textSize="@dimen/font_small"
+
+        />
+
+    <ImageView
+        android:id="@+id/imgTBSearchArtist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="?selectableItemBackgroundBorderless"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:padding="@dimen/spacing_normal"
+        android:src="@drawable/ic_search"
+
+        />
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/mainBackground</item>
+
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="searchViewStyle">@style/AppTheme.MySearchView</item>
+        <item name="autoCompleteTextViewStyle">
+            @style/AppTheme.AutoCompleteTextView.SearchView
+        </item>
+
+        <!--ripple effect color-->
+        <item name="android:colorControlHighlight">@color/normalGray</item>
+
+        <item name="android:textViewStyle">@style/AppTheme.MyTextView</item>
+        <!--shared element transition!-->
+        <item name="android:windowContentTransitions">true</item>
+
+        <!-- specify enter and exit transitions -->
+        <item name="android:windowEnterTransition">@transition/slide_and_changebounds_sequential</item>
+        <item name="android:windowExitTransition">@transition/slide_from_bottom</item>
+
+        <!-- specify shared element transitions -->
+        <item name="android:windowSharedElementEnterTransition">
+            @transition/changebounds_with_arcmotion
+        </item>
+        <item name="android:windowSharedElementExitTransition">
+            @transition/slide_and_changebounds_sequential
+        </item>
+    </style>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:background="@color/mainBackground"
+              android:foreground="?android:attr/selectableItemBackground"
+              tools:showIn="@layout/activity_album"
+              android:layout_margin="@dimen/spacing_normal"
+    >
+
+
+    <ImageView
+        android:id="@+id/imgAlbumCover"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/mainBackground"
+        android:padding="@dimen/spacing_normal"
+        android:scaleType="centerCrop"
+        android:transitionName="@string/albumCover_T"
+        app:srcCompat="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/txtAlbumName"
+        style="@style/headerText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/spacing_large"
+        android:text="AlbumTitle"/>
+
+    <TextView
+        style="@style/labelText"
+        android:id="@+id/txtAlbumArtist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/spacing_large"
+        android:text="Artist"/>
+</LinearLayout>

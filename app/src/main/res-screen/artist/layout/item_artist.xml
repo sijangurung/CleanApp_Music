@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="1dp"
+              android:background="@color/mainBackground"
+              android:foreground="?android:attr/selectableItemBackground"
+              android:orientation="horizontal"
+              tools:showIn="@layout/activity_artist_search"
+    >
+
+    <ImageView
+        android:id="@+id/imgArtistPic"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/spacing_normal"
+        android:background="@color/lightGray"
+        android:scaleType="centerCrop"
+
+        />
+
+    <TextView
+        android:id="@+id/txtArtistName"
+        style="@style/AppTheme.MyTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="@dimen/spacing_small"
+        android:textSize="@dimen/font_normal"
+        android:transitionName="@string/artistName_T"
+        tools:targetApi="lollipop"
+        tools:text="Test Artist"/>
+
+</LinearLayout>

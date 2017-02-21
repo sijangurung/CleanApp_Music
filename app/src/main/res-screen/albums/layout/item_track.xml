@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              tools:showIn="@layout/activity_tracks"
+    >
+
+    <TextView
+        android:id="@+id/txtAlbumHeaderText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkGray"
+        android:padding="@dimen/spacing_normal"
+        tools:text="Volume 1"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:padding="@dimen/spacing_large"
+        tools:background="@color/mainBackground"
+        >
+
+        <TextView
+            android:id="@+id/txtAlbumTrackNo"
+            style="@style/headerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="@dimen/spacing_normal"
+            android:padding="@dimen/spacing_normal"
+            tools:text="1."
+            />
+
+        <TextView
+            android:id="@+id/txtAlbumTrackArtist"
+            style="@style/labelText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtAlbumTrackName"
+            android:layout_alignStart="@+id/txtAlbumTrackName"
+            android:layout_below="@+id/txtAlbumTrackName"
+            android:textSize="@dimen/font_small"
+            tools:text="Prince, Judith Hill"/>
+
+        <TextView
+            android:id="@+id/txtAlbumTrackLength"
+            style="@style/labelText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/spacing_normal"
+            tools:text="03:10"
+            />
+
+        <TextView
+            android:id="@+id/txtAlbumTrackName"
+            style="@style/headerText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/spacing_hulk"
+            android:layout_toEndOf="@+id/txtAlbumTrackNo"
+            android:layout_toLeftOf="@+id/txtAlbumTrackLength"
+            android:layout_toRightOf="@+id/txtAlbumTrackNo"
+            android:textSize="@dimen/font_normal"
+            tools:text="MILLION $ SHOW."
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

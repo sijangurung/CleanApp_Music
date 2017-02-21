@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Demo Music App</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--Artist-->
+    <string name="strArtist">ARTISTS</string>
+    <string name="searchHint">type artist name…</string>
+    <string name="noArtistStatus">No artist to show , Start by searching on top…</string>
+
+
+    <!--Albums-->
+    <string name="albumsTitle">Albums</string>
+    <!--ICON SYMBOLS-->
+    <string name="IC_MIC">J</string>
+
+    <!--Exceptions String to Show-->
+    <string name="general_error_title">Oops, there was an error.</string>
+    <string name="server_error_body">Opps, Server error, try again later.</string>
+    <string name="technical_error_body">Oops, Technical error, try again later.</string>
+    <string name="unknown_host_error_body">Opps an Error, check network status and internet and try again.</string>
+    <string name="forbidden_error_body">Opps an Error, check credentials.</string>
+
+    <!--Custom Transition names-->
+    <string name="albumCover_T">AlbumCover</string>
+    <string name="artistName_T">ArtistName</string>
+
+    <integer name="anim_duration_short">200</integer>
+    <integer name="anim_duration_long">400</integer>
+
+</resources>
